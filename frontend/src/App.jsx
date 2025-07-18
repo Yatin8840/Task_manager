@@ -21,7 +21,7 @@ function App() {
 	const token = localStorage.getItem("token");
 	const getAuthUser = () => {
 		dispatch(setLoading(true));
-		fetch(`${import.meta.env.VITE_BACKEND_URL}/api/user/profile`, {
+		fetch("https://task-manager-jtxp.onrender.com/api/user/profile", {
 			method: "GET",
 			headers: getHeader()
 		})
